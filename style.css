@@ -1,43 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
-    color: #333;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  background: #f0f2f5;
+  color: #333;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 header {
-    background: royalblue;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
+  background: royalblue;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 10px;
 }
-.container{
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 0;
+
+.card {
+  background: royalblue;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px auto;
+  
 }
-h2{
-    border-bottom: 2px solid royalblue;
-    padding-botton: 10px;
+
+section {
+  margin: 40px 0;
 }
-ul{
-    list-style: none;
-    padding: 0
+
+h2 {
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
-ul li{
-    background: #f2f2f2;
-    margin: 8 px 0;
-    padding: 10px;
-    border-left: 5px solid royalblue;
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-a{
-    color: royalblue;
-    text-decoration: none;
+
+ul li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid royalblue;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
+
+a {
+  color: royalblue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+
+.contacts a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+.contacts img {
+  vertical-align: middle;
+}
+
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+#projects ul li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-left: 5px solid royalblue;
+  border-radius: 5px;
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card {
     padding: 20px;
-    margin-top: 40px;
+  }
 }
