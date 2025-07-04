@@ -46,7 +46,7 @@ header {
   width: 100%;
   background: royalblue;
   color: white;
-  min-height: 80vh;
+  min-height: 80vh; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,6 +142,15 @@ footer {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   width: 100%;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-in-forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 
