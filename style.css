@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  background: #f0f2f5;
+  color: #333;
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d6efd;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #cce4ff;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0  auto;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  background: royalblue;
+  color: white;
+  min-height: 80vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.card.flex-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  border-radius: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-block {
+  max-width: 500px;
+  text-align: left;
+}
+
+.text-block h1 {
+  margin: 0;
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+section {
+  margin: 60px 0;
+  margin-bottom: 100px; 
+}
+
+#about p,
+ul li,
+#projects ul li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid royalblue;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+
+.contacts a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+.contacts img {
+  vertical-align: middle;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  margin-top: 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-in-forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
