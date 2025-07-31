@@ -43,6 +43,7 @@ html, body {
   padding: 20px;
 }
 
+
 header {
   width: 100%;
   background: royalblue;
@@ -148,6 +149,93 @@ footer {
 .fade-in {
   animation: fadeIn 1.2s ease-in-forwards;
 }
+
+
+
+/* ======================= */
+/*         README          */
+/* ======================= */
+
+
+.readme-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.readme-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+.readme-container h1,
+.readme-container h2,
+.readme-container h3 {
+  color: #d9731f;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.readme-container p {
+  margin-bottom: 1em;
+}
+
+.readme-container ul,
+.readme-container ol {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.readme-container code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  font-family: monospace;
+  font-size: 0.95em;
+  border-radius: 4px;
+}
+
+.readme-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.screenshot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.screenshot {
+  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .readme-container {
+    padding: 20px 10px;
+  }
+}
+
 
 @keyframes fadeIn {
   from {opacity: 0;}
