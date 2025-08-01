@@ -5,6 +5,9 @@
     <title>My site</title>
     <link rel="stylesheet" href="style.css">
     <meta name = "description" content = "Toleutay Temirlan's personal site.">
+    <meta name="theme-color" content="#0d6efd">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                 <p>Future fullstack developer and inspired IT student.</p>
             </div>
         </div>
-    </header>
+    </header>   
 
     <main class="container">
         <section id="about">
@@ -34,7 +37,12 @@
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
+            <button id="toggle-skills" class="toggle-btn" aria-expanded="false" aria-controls="skills-list">
+                <span class="text">Show Skills</span>
+                <span class="material-symbols-outlined arrow">expand_more</span>
+            </button>
+
+            <ul id="skills-list" class="skills-list collapsed">
                 <li>Python</li>
                 <li>HTML & CSS</li>
                 <li>Git / GitHub</li>
@@ -43,6 +51,7 @@
                 <li>SQL</li>
             </ul>
         </section>
+
 
         <section id="projects">
             <h2>My projects</h2>
@@ -80,17 +89,12 @@
                 <li>2025: started learning web development (HTML, CSS, JS, React) . Focus on frontend development with the future goal of becoming a fullstack developer.</li>
             </ul>
         </section>
-        <section>
-        <p id="hidden-info" style="display: none;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, iusto!
-    </p>
-    </section>
     </main>
 
     <footer role="contentinfo">
         <p>&copy; 2025 Toleutay Temirlan. All rights reserved.  </p>
         <a href="resume.pdf" download>Download my resume</a>
     </footer>
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
