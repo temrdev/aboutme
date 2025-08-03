@@ -7,7 +7,7 @@
     <meta name = "description" content = "Toleutay Temirlan's personal site.">
     <meta name="theme-color" content="#0d6efd">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <img src="aboutme-readme/temirlan.jpg" alt="My photo" class="profile-img" />
             <div class="text-block">
                 <h1>Toleutay Temirlan</h1>
-                <p>Future fullstack developer and inspired IT student.</p>
+                <p>Junior Frontend developer and inspired IT student.</p>
             </div>
         </div>
     </header>   
@@ -32,16 +32,14 @@
     <main class="container">
         <section id="about">
             <h2>About me</h2>
-            <p>I'm based in Almaty, Kazakhstan. I'm learning programming, love studying, and constantly improving myself. My goal is to travel, work remotely, and do what I love.</p>
+            <p>Hello, reader! My name is Toleutay Temirlan. I am 17 years old. I'm based in Almaty, Kazakhstan. I'm learning programming, love studying, and constantly improving myself. My goal is to travel, work, and do what I love.</p>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2>My skills</h2>
             <button id="toggle-skills" class="toggle-btn" aria-expanded="false" aria-controls="skills-list">
-                <span class="text">Show Skills</span>
                 <span class="material-symbols-outlined arrow">expand_more</span>
             </button>
-
             <ul id="skills-list" class="skills-list collapsed">
                 <li>Python</li>
                 <li>HTML & CSS</li>
@@ -55,10 +53,14 @@
 
         <section id="projects">
             <h2>My projects</h2>
-            <ul>
+            <button id="toggle-projects" class="toggle-btn" aria-expanded="false" aria-controls="projects-list">
+                <span class="material-symbols-outlined arrow">expand_more</span>
+            </button>
+            <ul id="projects-list" class="projects-list collapsed">
                 <li><a href="https://github.com/temrdev/labirintgame" target="_blank"><strong>LabirintGame</strong></a> <a href="labirintgame-readme/labirintgame-readme.html" target="_blank">[ReadMe]</a></li>
                 <li><a href="https://github.com/temrdev/info_country" target="_blank"><strong>InfoCountry</strong></a> <a href="infocountry-readme/infocountry-readme.html" target="_blank">[ReadMe]</a></li>
                 <li><a href="https://github.com/temrdev/aboutme" target="_blank"><strong>AboutMe</strong></a> <a href="aboutme-readme/aboutme-readme.html" target="_blank">[ReadMe]</a></li>
+                <li><a href="https://github.com/temrdev/aboutfriends" target="_blank"><strong>AboutFriends</strong></a> <a href="aboutfriends-readme/aboutfriends-readme.html" target="_blank">[ReadMe]</a></li>
             </ul>
         </section>
 
@@ -68,17 +70,6 @@
             <p><a href="https://github.com/temrdev" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="19" alt="GitHub"> temrdev</a></p>
             <p><a href="https://www.linkedin.com/in/temirlan-toleutay-a28173369" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="19" alt="LinkedIn"> Temirlan Toleutay</a></p>
             <p><a href="https://t.me/temrqq" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="19" alt="Telegram"> @temrqq</a></p>
-            <form action="https://formspree.io/f/xpwrnopv" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email" required>
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message" required></textarea>
-                </label>
-                <button type="submit">Send</button>
-            </form>
         </section>
 
         <section id="journey" > 
@@ -92,8 +83,7 @@
     </main>
 
     <footer role="contentinfo">
-        <p>&copy; 2025 Toleutay Temirlan. All rights reserved.  </p>
-        <a href="resume.pdf" download>Download my resume</a>
+        <p>&copy; 2025 Toleutay Temirlan. All rights reserved.</p>
     </footer>
    <script src="script.js"></script>
 </body>

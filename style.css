@@ -11,7 +11,29 @@ html, body {
   color: #333;
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
-  
+}
+
+h2 {
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #084298;
+  text-decoration: underline;
 }
 
 .navbar {
@@ -36,13 +58,6 @@ html, body {
   text-decoration: underline;
   color: #cce4ff;
 }
-
-.container {
-  max-width: 1250px;
-  margin: 0  auto;
-  padding: 20px;
-}
-
 
 header {
   width: 100%;
@@ -84,14 +99,19 @@ header {
   font-weight: bolder;
 }
 
+.container {
+  max-width: 1250px;
+  margin: 0  auto;
+  padding: 20px;
+}
+
 section {
   margin: 60px 0;
   margin-bottom: 100px; 
 }
 
 #about p,
-ul li,
-#projects ul li {
+ul li {
   background: white;
   margin: 10px 0;
   padding: 15px;
@@ -100,70 +120,46 @@ ul li,
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.skills-list {
+#skills, #projects {
+  margin-bottom: 0;
+}
+
+.skills-list , .projects-list {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.4s ease;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
   opacity: 0;
   padding-left: 1rem;
 }
 
-.skills-list.expanded {
+.skills-list.expanded, .projects-list.expanded {
   max-height: 500px;
   opacity: 1;
 }
 
 .toggle-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
   background: transparent;
   border: none;
-  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .material-symbols-outlined.arrow {
+  font-size: 40px;
   transition: transform 0.3s ease;
-  font-size: 24px;
 }
 
 .toggle-btn.open .arrow {
   transform: rotate(180deg);
 }
 
-
-
-
-
 #projects ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-}
-
-
-h2 {
-  border-bottom: 2px solid royalblue;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: royalblue;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: #084298;
-  text-decoration: underline;
 }
 
 .contacts a {
@@ -229,7 +225,6 @@ footer {
 
 .readme-container ul,
 .readme-container ol {
-  padding-left: 1.5em;
   margin-bottom: 1em;
 }
 

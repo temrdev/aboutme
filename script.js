@@ -1,15 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('toggle-skills');
+  const toggleSkillsBtn = document.getElementById('toggle-skills');
+  const toggleProjectsBtn = document.getElementById('toggle-projects');
   const skillsList = document.getElementById('skills-list');
-  const arrow = toggleBtn.querySelector('.arrow');
-  const text = toggleBtn.querySelector('.text');
+  const projectsList = document.getElementById('projects-list');
+  const skillsArrow = toggleSkillsBtn.querySelector('.arrow');
+  const projectsArrow = toggleProjectsBtn.querySelector('.arrow');
 
-  toggleBtn.addEventListener('click', () => {
+  toggleSkillsBtn.addEventListener('click', () => {
     const isExpanded = skillsList.classList.toggle('expanded');
-    toggleBtn.classList.toggle('open');
-    toggleBtn.setAttribute('aria-expanded', isExpanded);
+    toggleSkillsBtn.classList.toggle('open');
+    toggleSkillsBtn.setAttribute('aria-expanded', isExpanded);
+  });
 
-    text.textContent = isExpanded ? 'Hide Skills' : 'Show Skills';
-    // Иконка остаётся "expand_more", мы просто вращаем её через CSS
+  toggleProjectsBtn.addEventListener('click', () => {
+    const isExpanded = projectsList.classList.toggle('expanded');
+    toggleProjectsBtn.classList.toggle('open');
+    toggleProjectsBtn.setAttribute('aria-expanded', isExpanded);
   });
 });
+
